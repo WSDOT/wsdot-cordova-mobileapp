@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gov.wa.wsdot.iphone.WSDOT" version="3.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="gov.wa.wsdot.iphone.WSDOT"
+    version="3.2.0"
+    android-versionCode="0000"
+    ios-CFBundleVersion="3.2.1"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
     <name>WSDOT</name>
     <description>
         The WSDOT mobile app contains traffic and travel information for the state of Washington.
@@ -25,5 +31,8 @@
         <preference name="StatusBarOverlaysWebView" value="false" />
         <preference name="StatusBarStyle" value="default" />
         <preference name="Orientation" value="all" />
+        <preference name="AutoHideSplashScreen" value="false"/>
+        <preference name="ShowSplashScreenSpinner" value="false"/>
+        <preference name="deployment-target" value="7.0" />
     </platform>
 </widget>
