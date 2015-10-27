@@ -44,6 +44,7 @@
     <allow-intent href="itms-apps:*" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="default" />
+    <preference name="Orientation" value="all" />
     <name>WSDOT</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

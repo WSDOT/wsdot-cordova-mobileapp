@@ -24,5 +24,6 @@
         <allow-intent href="itms-apps:*" />
         <preference name="StatusBarOverlaysWebView" value="false" />
         <preference name="StatusBarStyle" value="default" />
+        <preference name="Orientation" value="all" />
     </platform>
 </widget>
