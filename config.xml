@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gov.wa.wsdot.iphone.WSDOT"
-    version="3.2.0"
-    android-versionCode="0000"
-    ios-CFBundleVersion="3.2.1"
-    xmlns="http://www.w3.org/ns/widgets"
-    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="gov.wa.wsdot.mobileapp" version="3.2.0"
+    xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    android-packageName="gov.wa.wsdot.android.wsdot"
+    android-versionCode="1014320"
+    ios-CFBundleIdentifier="gov.wa.wsdot.iphone.WSDOT"
+    ios-CFBundleVersion="3.2.1">
     
     <name>WSDOT</name>
     <description>
