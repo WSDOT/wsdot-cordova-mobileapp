@@ -4,7 +4,7 @@
     android-packageName="gov.wa.wsdot.android.wsdot"
     android-versionCode="1014340"
     ios-CFBundleIdentifier="gov.wa.wsdot.iphone.WSDOT"
-    ios-CFBundleVersion="3.4.0">
+    ios-CFBundleVersion="3.4.1">
     
     <name>WSDOT</name>
     <description>
