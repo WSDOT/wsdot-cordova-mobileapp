@@ -55,6 +55,13 @@ module.exports = [
             "plugin.notification.badge",
             "cordova.plugins.notification.badge"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-google-analytics/www/analytics.js",
+        "id": "cordova-plugin-google-analytics.UniversalAnalytics",
+        "clobbers": [
+            "analytics"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -68,6 +75,7 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "2.1.0",
     "cordova-plugin-statusbar": "1.0.1",
     "de.appplant.cordova.plugin.badge": "0.7.1",
+    "cordova-plugin-google-analytics": "0.8.1",
     "cordova-plugin-extension": "1.2.1"
 }
 // BOTTOM OF METADATA
