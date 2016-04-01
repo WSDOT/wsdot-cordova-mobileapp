@@ -183,9 +183,6 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone"
         },
-        "cordova-plugin-admobpro": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
-        },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone"
         },
@@ -195,13 +192,16 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone"
         },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
+        "de.appplant.cordova.plugin.badge": {
+            "PACKAGE_NAME": "gov.wa.wsdot.iphone.WSDOT"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
+            "PACKAGE_NAME": "gov.wa.wsdot.iphone.WSDOT"
         },
-        "de.appplant.cordova.plugin.badge": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "gov.wa.wsdot.iphone.WSDOT"
+        },
+        "cordova-plugin-admobpro": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone.WSDOT"
         },
         "cordova-plugin-google-analytics": {
@@ -209,10 +209,10 @@
         }
     },
     "dependent_plugins": {
-        "cordova-plugin-extension": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
-        },
         "de.appplant.cordova.common.registerusernotificationsettings": {
+            "PACKAGE_NAME": "gov.wa.wsdot.iphone.WSDOT"
+        },
+        "cordova-plugin-extension": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone.WSDOT"
         }
     }
