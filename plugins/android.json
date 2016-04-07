@@ -97,33 +97,42 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone"
         },
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
-        },
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "gov.wa.wsdot.iphone"
-        },
         "de.appplant.cordova.plugin.badge": {
             "PACKAGE_NAME": "gov.wa.wsdot.iphone"
         },
-        "cordova-plugin-statusbar": {
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
         },
         "cordova-plugin-admobpro": {
             "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
         },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
+        },
         "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
+        },
+        "phonegap-plugin-mobile-accessibility": {
             "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-extension": {
+            "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "gov.wa.wsdot.android.wsdot"
         }
     }

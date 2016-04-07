@@ -21,6 +21,8 @@
 #define OPT_OVERLAP         @"overlap"
 #define OPT_ORIENTATION_RENEW   @"orientationRenew"
 #define OPT_OFFSET_TOPBAR   @"offsetTopBar"
+#define OPT_BG_COLOR        @"bgColor"
+#define OPT_STATUSBAR_STYLE @"statusBarStyle"
 
 #define OPT_POSITION        @"position"
 #define OPT_X               @"x"
@@ -56,6 +58,7 @@ enum {
 
 @interface GenericAdPlugin : CDVPluginExt
 
+- (void) getAdSettings:(CDVInvokedUrlCommand *)command;
 - (void) setOptions:(CDVInvokedUrlCommand *)command;
 
 - (void)createBanner:(CDVInvokedUrlCommand *)command;
@@ -67,6 +70,7 @@ enum {
 - (void)prepareInterstitial:(CDVInvokedUrlCommand *)command;
 - (void)showInterstitial:(CDVInvokedUrlCommand *)command;
 - (void)removeInterstitial:(CDVInvokedUrlCommand *)command;
+- (void)isInterstitialReady:(CDVInvokedUrlCommand*)command;
 
 @property (assign) BOOL testTraffic;
 @property (assign) BOOL licenseValidated;
@@ -81,6 +85,7 @@ enum {
 @property (assign) BOOL overlap;
 @property (assign) BOOL orientationRenew;
 @property (assign) BOOL offsetTopBar;
+@property (nonatomic, retain) UIColor* bgColor;
 
 @property (assign) int adPosition;
 @property (assign) int posX;
@@ -96,6 +101,7 @@ enum {
 
 @property (assign) BOOL bannerInited;
 @property (assign) BOOL bannerVisible;
+@property (assign) BOOL interstitialReady;
 
 #pragma mark virtual methods
 
@@ -104,9 +110,13 @@ enum {
 - (void) parseOptions:(NSDictionary*) options;
 - (NSString*) md5:(NSString*) s;
 
-- (void) onOrientationChange;
+- (UIColor *)getUIColorObjectByName:(NSString *)color;
+- (UIColor *)getUIColorObjectFromHexString:(NSString *)hexStr alpha:(CGFloat)alpha;
+- (unsigned int)intFromHexString:(NSString *)hexStr;
 
-- (CGRect)statusBarFrameViewRect:(UIView*)view;
+- (void) onOrientationChange;
+- (float) getStatusBarOffset;
+
 - (bool) __isLandscape;
 - (void) __showBanner:(int) position atX:(int)x atY:(int)y;
 
